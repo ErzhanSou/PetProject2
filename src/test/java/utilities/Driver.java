@@ -50,7 +50,7 @@ public class Driver {
         // these are implicit waits applied to the driver
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
-        driver.manage().window().fullscreen();
+        driver.manage().window().maximize();
         return driver;
     }
 
