@@ -9,8 +9,8 @@ public class CashwiseAuthorization {
     public static String getToken() {
         String url = Config.getProperty("cashWiseApiUrl") + "/api/myaccount/auth/login";
         RequestBody requestBody = new RequestBody();
-        requestBody.setEmail("bedalbekovelaman@gmail.com");
-        requestBody.setPassword("Mtmmtm031299");
+        requestBody.setEmail("souverigh@gmail.com");
+        requestBody.setPassword("Ask50WeEdCash");
 
         Response response = RestAssured.given().contentType(ContentType.JSON)
                 .body(requestBody).post(url);

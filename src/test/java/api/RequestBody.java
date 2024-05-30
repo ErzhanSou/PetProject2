@@ -7,6 +7,34 @@ public class RequestBody {
     private String bank_account_name;
     private String description;
     private int balance;
+    private String category_title;
+
+    public String getCategory_description() {
+        return category_description;
+    }
+
+    public void setCategory_description(String category_description) {
+        this.category_description = category_description;
+    }
+
+    public String getCategory_title() {
+        return category_title;
+    }
+
+    public void setCategory_title(String category_title) {
+        this.category_title = category_title;
+    }
+
+    public boolean isFlag() {
+        return flag;
+    }
+
+    public void setFlag(boolean flag) {
+        this.flag = flag;
+    }
+
+    private String category_description;
+    private boolean flag;
 
     public String getType_of_pay() {
         return type_of_pay;
