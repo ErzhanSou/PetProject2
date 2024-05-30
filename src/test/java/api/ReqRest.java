@@ -1,4 +1,4 @@
-package API;
+package api;
 
 
 import io.restassured.RestAssured;
@@ -6,8 +6,6 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.Request;
-import org.openqa.selenium.devtools.v85.fetch.model.AuthChallengeResponse;
 
 public class ReqRest {
     RequestBody requestBody = new RequestBody();

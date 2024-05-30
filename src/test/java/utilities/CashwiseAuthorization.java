@@ -1,7 +1,6 @@
 package utilities;
 
-import API.RequestBody;
-import io.cucumber.java.ja.但し;
+import api.RequestBody;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

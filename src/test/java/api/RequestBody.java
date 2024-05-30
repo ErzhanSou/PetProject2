@@ -1,4 +1,4 @@
-package API;
+package api;
 
 public class RequestBody {
     private String email;

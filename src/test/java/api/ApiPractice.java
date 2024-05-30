@@ -1,4 +1,4 @@
-package API;
+package api;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -9,8 +9,6 @@ import utilities.CashwiseAuthorization;
 import utilities.Config;
 
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 
 public class ApiPractice {
@@ -77,6 +75,8 @@ public class ApiPractice {
         Assert.assertEquals(200, status);
         int size = response.jsonPath().getList("JSON").size();
 
+        response.prettyPrint();
+
         String expectedBankAccountName = "Bank of America";
         boolean isPresent = false;
 
@@ -107,6 +107,7 @@ public class ApiPractice {
 
         Response response = RestAssured.given().auth().oauth2(token).contentType(ContentType.JSON)
                 .body(requestBody).post(url);
+
 
         int status = response.statusCode();
         Assert.assertEquals(201, status);
